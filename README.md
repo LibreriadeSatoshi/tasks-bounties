@@ -4,7 +4,7 @@ This repo manages bounties for various tasks. Each bounty type has its own folde
 
 ## Bounty types
 
-- **[video-segmentation](video-segmentation/)** — Create timeline maps for long-form videos (topics, questions, cut points)
+- **[video-segmentation](video-segmentation/)** — Segmentation map plus edited master (intro/outro, subtitles, cuts)
 
 *(More types will be added here.)*
 
