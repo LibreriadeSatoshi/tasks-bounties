@@ -18,7 +18,7 @@ Produce a **segmentation map** of the source class video and a **finished edit**
 
 1. Watch the **source** file for the row you claim.
 2. Build a **segmentation table** (format below) that covers the full source timeline: topics, questions, silence, and intended cut points.
-3. Edit the source into a **final video** that follows the table, **[Required video structure](https://github.com/LibreriadeSatoshi/tasks-bounties/tree/main/video-segmentation#required-video-structure)**, and **Editing rules**.
+3. Edit the source into a **final video** that follows the table, **[Required video structure](https://github.com/LibreriadeSatoshi/tasks-bounties/tree/main/video-segmentation#required-video-structure)**, and **[Editing rules](https://github.com/LibreriadeSatoshi/tasks-bounties/blob/main/video-segmentation/README.md#editing-rules)**.
 
 ## Deliverables
 
