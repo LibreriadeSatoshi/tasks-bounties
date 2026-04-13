@@ -34,7 +34,8 @@ Produce a **segmentation map** of the source class video and a **finished edit**
 The markdown file must contain:
 
 1. A single line with the edited video URL (`edited_video: <URL>`).
-2. The segmentation table (required format below).
+2. A single line with the subtitle file URL (`subtitles: <URL>`).
+3. The segmentation table (required format below).
 
 No extra metadata block is required.
 
@@ -47,7 +48,9 @@ Contributors **must** use only these assets for bumpers and caption language unl
 | Intro / outro **music** | **Fixed** for all submissions: use only the file(s) linked here (same intro/outro audio every time). Use **full duration** of the 5 s bumper; fade in/out **0.5 s** unless the file metadata says otherwise. **No** substitute music. Do **not** list music in the submission header. | `[LINK — e.g. Drive/WAV or MP3]` |
 | Intro **image** | Full-frame **1920x1080** (or match **Delivered master file** resolution below), **RGB**, `.png` or `.jpg`. Displays behind title text; keep **safe area** per template. | `[LINK]` |
 | Outro **image** | Same technical rules as intro; end-card layout (logo, URL, next-lesson text as per template). | `[LINK]` |
-| Optional **logo** / overlay | Use for bumpers only if linked here; same safe-area rules. | `[LINK or “none”]` |
+| Optional **logo** / overlay | Use for bumpers only if linked here; same safe-area rules. | `[LINK or "none"]` |
+| **Subtitle language** | All video editing submissions for this course must include captions in **`es-es`** (the original language of the class). The `<language>` folder in the submission path must be `es-es`. Translations into other languages are separate bounties opened after the edited video is accepted. | (policy text only) |
+| **Subtitle delivery** | Deliver subtitles as a **separate `.srt` file** — do **not** burn (hardcode) them into the video. This keeps the master file language-agnostic and allows additional languages to be added later without re-rendering. Caption **all** speech in the main body; do **not** caption music-only segments. | (policy text only) |
 | **Subtitle style** | Readable sans-serif, strong contrast, max **two lines** per cue, no overlapping cues, timing aligned to speech (not early by more than ~0.2 s or late by more than ~0.5 s without cause). | (policy text only) |
 
 Replace the bracketed placeholders when files and language policy are finalized.
@@ -68,7 +71,7 @@ Replace the bracketed placeholders when files and language policy are finalized.
 - **Video:** Official **outro image** full frame; required end-card elements per template (e.g. brand, link, call to action).
 - **Text:** Same language rules as intro.
 
-**Subtitles (main body):** Follow **Subtitle language**, **Subtitle delivery**, and **Subtitle style** in **Official assets**. The `<language>` folder in the submission path must match that language policy. Caption **all** speech in the main body (not music-only beds). Intro/outro on-screen text follows the same language unless **Official assets** allow bilingual bumpers.
+**Subtitles (main body):** Follow **Subtitle language**, **Subtitle delivery**, and **Subtitle style** in **Official assets**. The `<language>` folder in the submission path must match that language policy. Caption **all** speech in the main body (not music-only beds). Do **not** burn subtitles into the video — deliver them as a separate `.srt` file. Intro/outro on-screen text follows the same language unless **Official assets** allow bilingual bumpers.
 
 **Delivered master file:** Single **MP4**, **H.264** video, **AAC** audio, **1920x1080** unless the source is lower resolution (then match source max), frame rate **match source**. Upload to Drive; link via `edited_video:` in the submission file.
 
@@ -143,6 +146,7 @@ A submission is complete when **all** are true:
 - Submission file starts with `edited_video: <URL>` and includes the segmentation table in the required format.
 - Segmentation table satisfies **Segmentation table (required format)**.
 - Edited file meets **Official assets**, **Required video structure**, and **Editing rules**.
+- Subtitle file is a valid `.srt`, named correctly, and is **not** burned into the video.
 - Maintainer can play the edited video and spot-check random table rows against the source without ambiguity.
 
 ## How to submit
@@ -154,8 +158,8 @@ A submission is complete when **all** are true:
    `video-segmentation/submissions/<course-slug>/<language>/video-XX-YYYY_MM_DD.md`
 
    - `<course-slug>`: lowercase, hyphenated course id.
-   - `<language>`: lowercase **BCP 47** tag matching captions (e.g. `en-us`, `es-419`). Must match the subtitle language and chosen localization for this submission.
+   - `<language>`: `es-es` for the original editing bounty. Must match the subtitle language defined in **Official assets**.
 
-   Example: `video-segmentation/submissions/bitcoin-core-principles/en-us/video-01-2025_10_15.md`
+   Example: `video-segmentation/submissions/bitcoin-core-principles/es-es/video-01-2025_10_13.md`
 
 Payment is per merged, accepted submission after review.
