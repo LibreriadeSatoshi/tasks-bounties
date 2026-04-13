@@ -23,11 +23,12 @@ Produce a **segmentation map** of the source class video and a **finished edit**
 ## Deliverables
 
 
-| Deliverable  | Requirement                                                                   |
-| ------------ | ----------------------------------------------------------------------------- |
-| Edited video | Single master file, uploaded to Google Drive (or link agreed by maintainers). |
-| Link         | Public or “anyone with link can view” URL to that file.                       |
-| Markdown     | One `.md` under `video-segmentation/submissions/<course-slug>/<language>/` (path below). |
+| Deliverable   | Requirement                                                                   |
+| ------------- | ----------------------------------------------------------------------------- |
+| Edited video  | Single master file, uploaded to Google Drive (or link agreed by maintainers). |
+| Link          | Public or “anyone with link can view” URL to that file.                       |
+| Subtitle file | One `.srt` file per language, named `video-XX-YYYY_MM_DD.<language>.srt` (e.g. `video-01-2025_10_13.es-419.srt`). Upload to the same Drive folder as the edited video. |
+| Markdown      | One `.md` under `video-segmentation/submissions/<course-slug>/<language>/` (path below). |
 
 
 The markdown file must contain:
